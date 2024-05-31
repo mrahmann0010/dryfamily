@@ -1,0 +1,533 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+
+- Letter spacing
+-0.5px
+0.75px
+
+
+
+--- 02 COLORS
+- Primary: 
+#0890f1
+#219bf2
+#52b1f5
+#84c8f8
+
+#202b93
+
+#ffd16d
+#e67e22
+
+- Tints:
+
+
+
+- Shades: 
+
+- Accents:
+- Greys
+
+
+
+--- 05 SHADOWS
+
+
+--- 06 BORDER-RADIUS
+Default: 8px
+Medium: 10px
+Extra Large: 
+
+
+--- 07 WHITESPACE
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+}
+
+/***************************************/
+/* Reusable Content */
+/***************************************/
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.container2 {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.section-divider {
+  padding: 4.8rem 1.6rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid--cols--2 {
+  grid-template-columns: 1fr 1.2fr;
+  column-gap: 4.8rem;
+}
+
+.section-title {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #202b93;
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #222;
+  margin-bottom: 1.6rem;
+}
+
+.descriptions {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: -1px;
+  color: #444;
+  margin-bottom: 2.4rem;
+}
+
+.list-description {
+  list-style-type: none;
+
+  margin-bottom: 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+/***************************************/
+/* Header */
+/***************************************/
+
+.main-header {
+  padding: 1.6rem 6.4rem 1.6rem 6.4rem;
+  margin: 0 auto;
+  background-color: #219bf2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Temporary */
+.main-header div a:link,
+.main-header div a:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.navigation-menu-lists {
+  list-style-type: none;
+
+  display: flex;
+  gap: 2.4rem;
+}
+
+.nav-links:link,
+.nav-links:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.nav-links:hover,
+.nav-links:active {
+  cursor: pointer;
+}
+
+/***************************************/
+/* Section Hero */
+/***************************************/
+
+.section-hero {
+  /* background-color: #e6f4fe; */
+}
+
+.hero-textbox {
+  align-self: center;
+}
+
+.hero-main-heading {
+  font-size: 5.2rem;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #555;
+
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.buttons {
+  margin: 3.2rem;
+
+  display: flex;
+  gap: 2.4rem;
+}
+.button {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #fff;
+
+  background-color: #0890f1;
+  padding: 1.2rem 2.4rem;
+
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #52b1f5;
+  color: #333;
+}
+
+/***************************************/
+/* Section Services */
+/***************************************/
+
+.section-services {
+  /* background-color: #e6f4fe; */
+}
+
+.services-box {
+  margin: 0 auto;
+  height: 250px;
+  width: 100%;
+  border: 1px solid #0890f1;
+  border-radius: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  box-shadow: 3.2px 0 4.8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.service-item:hover {
+  transform: translate(1px, -2px);
+  box-shadow: 3.2px 0 4.8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.service-item-img {
+  height: 12rem;
+  width: 12rem;
+  /* background-color: #cee9fc; */
+  opacity: 0.8;
+  border-radius: 8px;
+  /* padding: 0 1.2rem; */
+}
+
+.service-item-text {
+  font-size: 1.8rem;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #555;
+}
+
+/***************************************/
+/* Section How it works */
+/***************************************/
+
+.howitworks-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-template-rows: none; */
+  justify-items: center;
+  align-items: center;
+  row-gap: 6.4rem;
+  column-gap: 4.4rem;
+}
+
+.howitworks-icon {
+  height: 2.2rem;
+  width: 2.2rem;
+  stroke: #0890f1;
+}
+
+.list-item {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.list-item-description {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #444;
+
+  align-self: flex-end;
+}
+
+.howitwork-img {
+  width: 400px;
+  height: 400px;
+}
+
+.additional-img {
+  justify-self: start;
+}
+
+/***************************************/
+/* Section Call to Action (CTA) */
+/***************************************/
+
+.cta-extra {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.cta {
+  margin-top: 3.2rem;
+
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 208, 109, 0.9),
+    rgba(255, 208, 109, 1)
+  );
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: end;
+
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow: 1.6px 3.2px 4.8px rgba(0, 0, 0, 0.1);
+}
+
+.cta-textbox {
+  padding: 3.6rem;
+}
+
+.cta-heading {
+  font-size: 4.4rem;
+  font-weight: 600;
+  line-height: 1.05;
+  letter-spacing: -1px;
+  color: #202b93;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.cta-descriptions {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 3rem;
+}
+.cta-img {
+  width: 360px;
+  height: 408px;
+}
+
+.cta-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+  align-items: end;
+}
+
+.box-holder label {
+  display: block;
+
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+
+  color: #333;
+}
+
+.cta-form input,
+.cta-form select {
+  font-size: 1.8rem;
+  font-family: inherit;
+  font-weight: 500;
+  width: 100%;
+  border: none;
+  padding: 1.2rem;
+  border-radius: 10px;
+}
+
+.cta-form button {
+  width: 100%;
+  border: none;
+
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding: 1.2rem;
+  background-color: #fff;
+  color: #202b93;
+  border-radius: 10px;
+}
+
+/***************************************/
+/* Footer */
+/***************************************/
+
+.footer {
+  margin: 3.2rem;
+}
+
+.footer-con {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  column-gap: 2.4rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+  color: #222;
+}
+
+.logo-list {
+  list-style-type: none;
+  display: flex;
+  gap: 2.4rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.extra {
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.social-logo {
+  width: 24px;
+  height: 24px;
+  filter: sepia();
+}
+.copyright {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: auto;
+  color: #333;
+}
+
+address p {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.6;
+}
+
+address a {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: normal;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.contact {
+  color: #555;
+}
+
+.list-extra {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #555;
+}
+
+.footer-heading-main {
+  display: block;
+  text-decoration: none;
+  color: #0890f1;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 2.4rem;
+}
